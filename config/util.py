@@ -7,8 +7,26 @@ import os
 import sys
 import time
 import random
+import requests
 from datetime import datetime
 from .config import *
+
+def CheckWebhook(webhook_url):
+    try:
+        response = requests.get(webhook_url)
+        return response.status_code == 200
+    except:
+        return False
+
+def ErrorWebhook():
+    print(f"\n{ERROR} Webhook Invalide.")
+    Continue()
+    Reset()
+
+def ErrorNumber():
+    print(f"\n{ERROR} Nombre invalide.")
+    Continue()
+    Reset()
 
 def Censored(text):
     print(f"{BEFORE + current_time_hour() + AFTER} {INFO} Censored Text -> {white} חלק צונזר")
