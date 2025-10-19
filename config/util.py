@@ -7,7 +7,7 @@ import os
 import sys
 import time
 from datetime import datetime
-from config.config import *
+from .config import *
 
 def Slow(text):
     """ Affiche le texte avec un effet de ralenti, caractère par caractère. """

@@ -3,8 +3,8 @@
 # Copyright (c) RedTiger
 # See the file 'LICENSE' for copying permission
 
-from config.util import *
-from config.config import *
+from config.util import Slow, Title, current_time_hour, Continue, Reset, Error, ErrorModule
+from config.config import map_banner, BEFORE, AFTER, INPUT, WAIT, INFO_ADD, red, white, reset
 try:
     import requests
 except Exception as e:
@@ -36,7 +36,7 @@ def run():
         org = api.get('org', "None")
         as_host = api.get('as', "None")
 
-        Slow(f\"\"\"
+        Slow(f"""
 {white}────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  {INFO_ADD} Status    : {white}{status}{red}
  {INFO_ADD} Pays      : {white}{country} ({country_code}){red}
@@ -50,7 +50,7 @@ def run():
  {INFO_ADD} Org       : {white}{org}{red}
  {INFO_ADD} As        : {white}{as_host}{red}{reset}
 {white}────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-\"\"\")
+""")
 
         Continue()
         Reset()

@@ -11,8 +11,8 @@ import time
 # Permet d'importer les modules des sous-dossiers
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
-from config.util import *
-from config.config import *
+from config.util import Slow, Title, current_time_hour, Error
+from config.config import map_banner, BEFORE, AFTER, INPUT, INFO_ADD, ERROR, red, white, reset
 
 def find_tools():
     """ Trouve dynamiquement les outils disponibles dans le dossier 'tools'. """
