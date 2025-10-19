@@ -23,11 +23,6 @@ def ErrorWebhook():
     Continue()
     Reset()
 
-def ErrorNumber():
-    print(f"\n{ERROR} Nombre invalide.")
-    Continue()
-    Reset()
-
 def Censored(text):
     print(f"{BEFORE + current_time_hour() + AFTER} {INFO} Censored Text -> {white} חלק צונזר")
 

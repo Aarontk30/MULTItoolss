@@ -21,15 +21,7 @@ INFO_ADD = f"{white}[{blue}INFO{white}]{reset}"
 ERROR = f"{white}[{magenta}ERROR{white}]{reset}"
 ADD = f"{white}[{blue}ADD{white}]{reset}"
 INFO = f"{white}[{magenta}INFO{white}]{reset}"
-GEN_VALID = f"{white}[{green}SUCCESS{white}]{reset}"
-GEN_INVALID = f"{white}[{magenta}ERROR{white}]{reset}"
-BEFORE_GREEN = f"{white}[{green}+{white}]{reset}"
-AFTER_GREEN = f"{white}[{green}+{white}]{reset}"
 
-
-# --- WEBHOOK ---
-username_webhook = "Crystal"
-avatar_webhook = "https://cdn.discordapp.com/attachments/1114624133353840782/1114624974950375574/11-23-42-385_200-200-0-0_43261695420231-0.png"
 
 # --- BANNERS ---
 map_banner = f"""
