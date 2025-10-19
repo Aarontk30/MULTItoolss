@@ -12,7 +12,7 @@ import time
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 from config.util import Slow, Title, current_time_hour, Error
-from config.config import map_banner, BEFORE, AFTER, INPUT, INFO_ADD, ERROR, red, white, reset
+from config.config import map_banner, BEFORE, AFTER, INPUT, INFO_ADD, ERROR, blue, magenta, white, reset
 
 def find_tools():
     """ Trouve dynamiquement les outils disponibles dans le dossier 'tools'. """
@@ -35,9 +35,9 @@ def main():
         print(f"{BEFORE} Outils disponibles :{reset}")
         for i, tool_name in enumerate(tools, 1):
             formatted_name = tool_name.replace('_', ' ').replace('-', ' ').title()
-            print(f"  {white}[{red}{i}{white}] {formatted_name}{reset}")
+            print(f"  {white}[{blue}{i}{white}] {formatted_name}{reset}")
 
-        print(f"  {white}[{red}0{white}] Quitter{reset}")
+        print(f"  {white}[{magenta}0{white}] Quitter{reset}")
 
         try:
             choice_str = input(f"\n{BEFORE + current_time_hour() + AFTER} {INPUT} Votre choix -> {reset}")

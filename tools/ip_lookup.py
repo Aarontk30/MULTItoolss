@@ -4,7 +4,7 @@
 # See the file 'LICENSE' for copying permission
 
 from config.util import Slow, Title, current_time_hour, Continue, Reset, Error, ErrorModule
-from config.config import map_banner, BEFORE, AFTER, INPUT, WAIT, INFO_ADD, red, white, reset
+from config.config import map_banner, BEFORE, AFTER, INPUT, WAIT, INFO_ADD, blue, magenta, white, reset
 try:
     import requests
 except Exception as e:
@@ -38,17 +38,17 @@ def run():
 
         Slow(f"""
 {white}────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- {INFO_ADD} Status    : {white}{status}{red}
- {INFO_ADD} Pays      : {white}{country} ({country_code}){red}
- {INFO_ADD} Région    : {white}{region} ({region_code}){red}
- {INFO_ADD} Code Postal: {white}{zip_code}{red}
- {INFO_ADD} Ville     : {white}{city}{red}
- {INFO_ADD} Latitude  : {white}{latitude}{red}
- {INFO_ADD} Longitude : {white}{longitude}{red}
- {INFO_ADD} Fuseau Hor. : {white}{timezone}{red}
- {INFO_ADD} FAI       : {white}{isp}{red}
- {INFO_ADD} Org       : {white}{org}{red}
- {INFO_ADD} As        : {white}{as_host}{red}{reset}
+ {INFO_ADD} Status    : {white}{status}{magenta}
+ {INFO_ADD} Pays      : {white}{country} ({country_code}){magenta}
+ {INFO_ADD} Région    : {white}{region} ({region_code}){magenta}
+ {INFO_ADD} Code Postal: {white}{zip_code}{magenta}
+ {INFO_ADD} Ville     : {white}{city}{magenta}
+ {INFO_ADD} Latitude  : {white}{latitude}{magenta}
+ {INFO_ADD} Longitude : {white}{longitude}{magenta}
+ {INFO_ADD} Fuseau Hor. : {white}{timezone}{magenta}
+ {INFO_ADD} FAI       : {white}{isp}{magenta}
+ {INFO_ADD} Org       : {white}{org}{magenta}
+ {INFO_ADD} As        : {white}{as_host}{magenta}{reset}
 {white}────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 """)
 

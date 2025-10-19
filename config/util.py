@@ -6,8 +6,21 @@
 import os
 import sys
 import time
+import random
 from datetime import datetime
 from .config import *
+
+def Censored(text):
+    print(f"{BEFORE + current_time_hour() + AFTER} {INFO} Censored Text -> {white} חלק צונזר")
+
+def ChoiceUserAgent():
+    user_agents = [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+    ]
+    return random.choice(user_agents)
 
 def Slow(text):
     """ Affiche le texte avec un effet de ralenti, caractère par caractère. """

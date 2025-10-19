@@ -5,29 +5,44 @@
 
 import colorama
 
+import colorama
+
 # --- COLORS ---
-red = colorama.Fore.RED
+blue = colorama.Fore.BLUE
+magenta = colorama.Fore.MAGENTA
 white = colorama.Fore.WHITE
 green = colorama.Fore.GREEN
 reset = colorama.Fore.RESET
 
 # --- PREFIXES ---
-BEFORE = f"{white}[{red}+{white}]{reset}"
-AFTER = f"{white}[{red}+{white}]{reset}"
-INPUT = f"{white}[{red}>{white}]{reset}"
-WAIT = f"{white}[{red}WAIT{white}]{reset}"
-INFO_ADD = f"{white}[{red}INFO{white}]{reset}"
-ERROR = f"{white}[{red}ERROR{white}]{reset}"
+BEFORE = f"{white}[{blue}+{white}]{reset}"
+AFTER = f"{white}[{magenta}+{white}]{reset}"
+INPUT = f"{white}[{blue}>{white}]{reset}"
+WAIT = f"{white}[{magenta}WAIT{white}]{reset}"
+INFO_ADD = f"{white}[{blue}INFO{white}]{reset}"
+ERROR = f"{white}[{magenta}ERROR{white}]{reset}"
+ADD = f"{white}[{blue}ADD{white}]{reset}"
+INFO = f"{white}[{magenta}INFO{white}]{reset}"
 
-# --- BANNER ---
+# --- BANNERS ---
 map_banner = f"""
-{red}
-██████╗ ███████╗██████╗     ████████╗ ██████╗  ██████╗ ██╗     ███████╗
-██╔══██╗██╔════╝██╔══██╗    ╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
-██████╔╝█████╗  ██║  ██║       ██║   ██║   ██║██║   ██║██║     ███████╗
-██╔══██╗██╔══╝  ██║  ██║       ██║   ██║   ██║██║   ██║██║     ╚════██║
-██║  ██║███████╗██████╔╝       ██║   ╚██████╔╝╚██████╔╝███████╗███████║
-╚═╝  ╚═╝╚══════╝╚═════╝        ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
+{blue}
+███╗   ███╗██╗   ██╗██╗ ██████╗ ██╗  ██╗
+████╗ ████║██║   ██║██║██╔═══██╗╚██╗██╔╝
+██╔████╔██║██║   ██║██║██║   ██║ ╚███╔╝
+██║╚██╔╝██║██║   ██║██║██║   ██║ ██╔██╗
+██║ ╚═╝ ██║╚██████╔╝██║╚██████╔╝██╔╝ ██╗
+╚═╝     ╚═╝ ╚═════╝ ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+                        {white}--- Multi-Tool by Jules ---{reset}
+"""
 
-                {white}--- Welcome to the Multi-Tool by Jules ---{reset}
+scan_banner = f"""
+{magenta}
+███████╗ ██████╗  █████╗ ███╗   ██╗
+██╔════╝██╔════╝ ██╔══██╗████╗  ██║
+███████╗██║  ███╗███████║██╔██╗ ██║
+╚════██║██║   ██║██╔══██║██║╚██╗██║
+███████║╚██████╔╝██║  ██║██║ ╚████║
+╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝
+                      {white}--- Web Scanner ---{reset}
 """
